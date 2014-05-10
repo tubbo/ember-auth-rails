@@ -19,6 +19,12 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'ember-auth-source', '>= 8.0.0'
   gem.add_dependency 'rails'
 
+  gem.add_dependency 'ember-auth-request-jquery-rails'
+  gem.add_dependency 'ember-auth-session-cookie-rails'
+  gem.add_dependency 'ember-auth-response-json-rails'
+  gem.add_dependency 'ember-auth-strategy-token-rails'
+  gem.add_dependency 'ember-auth-module-ember-data-rails'
+
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
